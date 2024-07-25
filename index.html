@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Search by Product name, Title, Vendor">
+        <button class="search-button" onclick="searchProducts()">Search</button>
+        <a href="cart.html" class="cart-link" id="cart-link">Cart (0)</a><i class="fa fa-shopping-cart"></i>
+    </div>
+    <div class="buttons">
+        <button onclick="filterProducts('Men')">Men</button>
+        <button onclick="filterProducts('Women')">Women</button>
+        <button onclick="filterProducts('Kids')">Kids</button>
+        <button onclick="displayAllProducts()">All</button>
+    </div>
+    <div id="productList"></div>
+    <script src="script.js"></script>
+</body>
+</html>

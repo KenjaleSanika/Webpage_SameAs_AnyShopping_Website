@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart-page">
+        <div class="cart-header">
+            <h1>Your Shopping Cart</h1>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!-- Cart items will be inserted here by JavaScript -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function checkout() {
+            alert("Proceeding to checkout!");
+            // Add logic to handle the checkout process
+        }
+
+        // Initialize cart items
+        document.addEventListener('DOMContentLoaded', displayCartItems);
+    </script>
+</body>
+</html>
